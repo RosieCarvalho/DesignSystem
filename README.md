@@ -46,3 +46,6 @@
   - configuração: turbo.json
 
 # DEPLOY
+
+- npm i @storybook/storybook-deployer --save-dev
+- gh repo create
