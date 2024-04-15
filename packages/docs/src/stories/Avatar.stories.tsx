@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Avatar, AvatarProps } from "@ignite-ui/react";
 
 export default {
-  title: "Data display/Avatar",
+  title: "Data Display/Avatar",
   component: Avatar,
   args: {
     src: "https://github.com/diego3g.png",
