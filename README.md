@@ -49,3 +49,4 @@
 
 - npm i @storybook/storybook-deployer --save-dev
 - gh repo create
+- configuração no arquivo: deploy-docs.yml
