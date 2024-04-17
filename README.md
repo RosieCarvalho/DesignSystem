@@ -45,8 +45,16 @@
 - TurboRepo: util quando se trabalhar com monorepos. Ele ajuda a executar scripts em todos pacotes ao mesmo tempo. (Rodar todos pacotes do monorepo ao mesmo tempo)
   - configuração: turbo.json
 
-# DEPLOY
+# DEPLOY -
 
 - npm i @storybook/storybook-deployer --save-dev
 - gh repo create
 - configuração no arquivo: deploy-docs.yml
+- add config em main.js
+  viteFinal: (config, { configType }) => {
+  if (configType === 'PRODUCTION') {
+  config.base = '/05-design-system/'
+  }
+
+  return config
+  }
