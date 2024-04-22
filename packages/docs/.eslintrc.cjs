@@ -1,3 +1,3 @@
 module.exports = {
-  extends: "@ignite-ui/eslint-config",
+  extends: "@nuvemsi/eslint-config",
 };

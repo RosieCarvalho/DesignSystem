@@ -52,9 +52,19 @@
 - configuração no arquivo: deploy-docs.yml
 - add config em main.js
   viteFinal: (config, { configType }) => {
+
   if (configType === 'PRODUCTION') {
   config.base = '/05-design-system/'
   }
 
   return config
   }
+
+- configurando versões
+  - instalar:@changesets/cli - https://github.com/changesets/changesets/blob/main/docs/intro-to-using-changesets.md
+  - adicionado scripts dentro do package.json
+    "changeset": "changeset", // para subir uma nova modificação
+    "version-packages": "changeset version", // mudar versão
+    "release": "turbo run build --filter=packages/docs && changeset publish" //subir para npm uma nova release
+  - necessário logar no npm
+    - criar uma organização no npm e o nome da organização deve ser colocado no nome do pacote

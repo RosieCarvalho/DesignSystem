@@ -15,7 +15,7 @@ module.exports = {
   },
   viteFinal: (config, { configType }) => {
     if (configType === "PRODUCTION") {
-      config.base = "/DesignSystem/";
+      config.base = "/05-design-system/";
     }
 
     return config;

@@ -1,5 +1,5 @@
 {
-  "name": "@ignite-ui/tokens",
+  "name": "@nuvemsi/tokens",
   "version": "1.0.0",
   "description": " design system ",
   "main": "./dist/index.js",
@@ -15,8 +15,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@ignite-ui/ts-config": "*",
+    "@nuvemsi/ts-config": "*",
     "typescript": "^5.4.3",
-    "@ignite-ui/eslint-config": "*"
+    "@nuvemsi/eslint-config": "*"
   }
 }
